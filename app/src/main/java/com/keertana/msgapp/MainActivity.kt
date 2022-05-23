@@ -1,5 +1,6 @@
 package com.keertana.msgapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.NavigationView
 import android.support.v4.widget.DrawerLayout
@@ -40,7 +41,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun loginBtnNavClicked(view:View){
-
+        val loginIntent=Intent(this,LoginActivity::class.java)
+        startActivity(loginIntent)
     }
 
     fun addChannelClicked(view:View){
@@ -48,6 +50,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun sendMsgBtnClicked(view:View){
-        
+
     }
 }
