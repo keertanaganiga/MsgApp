@@ -1,4 +1,4 @@
-package com.keertana.msgapp
+package com.keertana.msgapp.Controller
 
 import android.content.Intent
 import android.os.Bundle
@@ -12,6 +12,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.keertana.msgapp.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -30,7 +31,8 @@ class MainActivity : AppCompatActivity() {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(setOf(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow), drawerLayout)
+            R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow
+        ), drawerLayout)
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
@@ -41,7 +43,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun loginBtnNavClicked(view:View){
-        val loginIntent=Intent(this,LoginActivity::class.java)
+        val loginIntent=Intent(this, LoginActivity::class.java)
         startActivity(loginIntent)
     }
 

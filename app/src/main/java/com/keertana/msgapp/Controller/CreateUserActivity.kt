@@ -1,9 +1,10 @@
-package com.keertana.msgapp
+package com.keertana.msgapp.Controller
 
 import android.graphics.Color
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
+import com.keertana.msgapp.R
 import kotlinx.android.synthetic.main.activity_create_user.*
 import java.util.*
 
